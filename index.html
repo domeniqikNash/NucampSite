@@ -22,6 +22,7 @@
    <header class="jumbotron jumbotron-fluid">
     <div class="container">
      <div class="row">
+         <a><button type="submit" class="btn btn-info">reserve campsite</button></a>
         <div class="col-4 col-sm-3 col-md-2 align-self-center">
             <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
             </div>
@@ -71,6 +72,9 @@
             <h2>Featured Campsites</h2>
             </div>
             <div class="col">
+                <div class="media">
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="react lake thumb" />
+                    <div class="media-body align-self-center">
                 <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the 
                 pristine React Lake is a favorite for fly fishers.</p>
@@ -78,18 +82,51 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                 <h2 class="text-sm-right">Our Community Partners</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
-                    <div class="media-body align-self-center">
-                        <h3>Bootstrap Outfitters</h3>
-        				<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                <div class="col-sm-4 order-sm-last col-md-3">
+                    <h2 class="text-sm-right">Our Community Partners</h2>
+                </div>
+                <div class="col">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                        <div class="media-body align-self-center">
+                            <h3>Bootstrap Outfitters</h3>
+                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+<div class="row row-content">
+    <div class="col-sm-6 mx-auto">
+        <div class="card">
+          <h3 class="bg-info text-white card-header" >Reserve a Campsite</h3>
+          <div class="card-body">
+              <form id="reserveForm">
+                  <div class="row">
+                   <label for="numCampers" class="col-form-label col-sm-6">Number of Campers</label>
+                    <select  class="form-control form-control-sm" name="numCampers" id="numCampers">
+                        <option value="">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    </div>
+                    <div class="row">
+                    <label for="date" class="col-sm-6">Date</label>
+                    <input  class="form-control form-control-sm" type="date" id="date" name="date">
+                    </div>
+                    <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+    </div>
+ </div> 
 
     <footer>
         <div class="container">
